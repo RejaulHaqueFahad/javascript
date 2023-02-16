@@ -42,11 +42,13 @@
     <button onclick="document.getElementById('boom').style.display='block'">Click here!</button>
     <button onclick="document.getElementById('boom').style.display='none'">Close me</button>
 
-    <!-- <h1>Total vowel is <span id="demo101"></span></h1> -->
+    <p class="planet-name"></p>
+
+    <!-- JavaScript Start -->
     <script src="script.js"></script>
+    <script src="jquery-3.6.3.min.js"></script>
 
     <script>
-
         function Close() {
             let close = document.getElementById("box");
             
@@ -58,6 +60,9 @@
 
             open.style.display = "block";
         }
+// jQuery
+        var planet = ["Earth", "Mars", "Pluto", "Volkan"];
+        $('.planet-name').text(planet);
     </script>
 </body>
 </html>
